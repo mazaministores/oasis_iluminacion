@@ -29,23 +29,23 @@ let orders = []
 let methods = [
   {
     method: 'Pago Movil',
-    data: 'Banesco ---- 04121112222 ---- V-27790321 ---- MAZAFOOD '
+    data: ''
   },
   {
     method: "Transferencias Bancarias",
-    data: "Banesco ---- 0132-3434-3434-4343-3434 ---- ANDRES MAZA ---- V-27790321 "
+    data: ""
   },
   {
     method: "Punto de Venta",
-    data: 'Te esperamos en nuestro local'
+    data: ''
   },
   {
-    method: 'Zelle',
-    data: 'Usuario: usuario --- correo: correo@gmail.com'
+    method: 'Paypal',
+    data: ''
   },
   {
     method: "Efectivo",
-    data: 'Te esperamos en nuestro local'
+    data: ''
   }
 ]
 

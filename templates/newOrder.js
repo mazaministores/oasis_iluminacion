@@ -3,10 +3,15 @@
 const nodemailer = require('nodemailer')
 const { google } = require('googleapis')
 
-const CLIENT_ID = '508966430736-r4dvoi7ir1eshacgkkts0ncorcn2ejih.apps.googleusercontent.com'
-const CLIENT_SECRET = '93PFtumXz3E57rb7hPa8z3fx'
+// const CLIENT_ID = '508966430736-r4dvoi7ir1eshacgkkts0ncorcn2ejih.apps.googleusercontent.com'
+// const CLIENT_SECRET = '93PFtumXz3E57rb7hPa8z3fx'
+// const REDIRECT_URI = 'https://developers.google.com/oauthplayground'
+// const REFRESH_TOKEN = '1//04ho88nls5GVtCgYIARAAGAQSNwF-L9IrFH9sZP5-wZkUC-CbUJQfGWuHrcyHRTbY9Oe3WbmPk3OPYBZEsc52vsH9ZpKJ0RpLuYk'
+
+const CLIENT_ID = '195929321633-t1qn68d5uvhn3jem6e7d5u9p0g85872o.apps.googleusercontent.com'
+const CLIENT_SECRET = '2hVITvWUPWHbXCVkqkecYP8l'
 const REDIRECT_URI = 'https://developers.google.com/oauthplayground'
-const REFRESH_TOKEN = '1//04ho88nls5GVtCgYIARAAGAQSNwF-L9IrFH9sZP5-wZkUC-CbUJQfGWuHrcyHRTbY9Oe3WbmPk3OPYBZEsc52vsH9ZpKJ0RpLuYk'
+const REFRESH_TOKEN = '1//045Ca9mAFBbnUCgYIARAAGAQSNwF-L9IrqfXBu66tHXnmwVKDx9cSuwz74v8XVyo4H46rOLu2UYth_3czVoHU7A4u7ObrlIiVXc4'
 
 require('dotenv').config()
 

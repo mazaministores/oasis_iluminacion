@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-ARCHIVO_RESET
+/ARCHIVO_RESET
 
 # testing
 /coverage

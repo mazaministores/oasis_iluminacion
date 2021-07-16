@@ -1,0 +1,12 @@
+POST http://localhost:3001/api/articles
+Content-Type:application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYmVjZmQwMjJjNGM4MjM5NDI4YzI4OSIsInVzZXJuYW1lIjoib3BhbmRyZTEyM0BnbWFpbC5jb20iLCJpYXQiOjE2MjMxNTQ2MDV9.uKONlOSsNsWngho_d1lABjSL5WQoA0nWZjSCXVHn1BQ
+
+
+{
+    "brand":"Ensalada al estilo niza",
+    "model":"las aceitunas le aportan un sabor dulce que combinado con las hojas de dirversas lechugas forman jugosas capas complementadas con las anchoas, los tomates y  los rabanos",
+    "price":"3.10",
+    "image":"https://firebasestorage.googleapis.com/v0/b/mzmenudigital.appspot.com/o/image-4.png?alt=media&token=97a3e649-de65-43ce-81c5-929f96d67d6e",
+    "categorie":"Ensaladas"
+}

@@ -1,0 +1,16 @@
+POST http://localhost:3001/api/orders
+Content-Type:application/json
+
+{
+    "nombre": "Jose",
+    "telefono": 0,
+    "tipo": "",
+   "direccion": "",
+    "casa": "",
+    "localidad": "",
+    "metodoPago": "",
+    "pedido":["Array"],
+    "subtotal": 0,
+    "total": 0,
+    "date": ""
+}

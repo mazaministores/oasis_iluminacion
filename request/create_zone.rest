@@ -1,0 +1,7 @@
+POST http://localhost:3001/api/zonesDelivery
+Content-Type:application/json
+
+{
+    "addres":"Altamira, Chacao, Los palos grandes", 
+    "price":2
+}

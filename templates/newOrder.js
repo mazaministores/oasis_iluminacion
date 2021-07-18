@@ -11,8 +11,7 @@ const { google } = require('googleapis')
 const CLIENT_ID = '195929321633-t1qn68d5uvhn3jem6e7d5u9p0g85872o.apps.googleusercontent.com'
 const CLIENT_SECRET = '2hVITvWUPWHbXCVkqkecYP8l'
 const REDIRECT_URI = 'https://developers.google.com/oauthplayground'
-const REFRESH_TOKEN = '1//045Ca9mAFBbnUCgYIARAAGAQSNwF-L9IrqfXBu66tHXnmwVKDx9cSuwz74v8XVyo4H46rOLu2UYth_3czVoHU7A4u7ObrlIiVXc4'
-
+const REFRESH_TOKEN = '1//04__sYkk4VFfhCgYIARAAGAQSNwF-L9IreIu1AhukAVE_mE9M2cHBOLz612dpzFtCd5D6J1F5uUvL-zlF93VOP7_TdK3Vt3F-iVQ'
 require('dotenv').config()
 
 const oAuth2Client = new google.auth.OAuth2(
@@ -53,7 +52,7 @@ this.sendMailOrder = (object) => {
 
     let mail_options = {
         from: 'Pabs',
-        to: 'opandre123@gmail.com',
+        to: 'oasis.iluminacion@gmail.com',
         subject: `Nueva Orden - ${object.numeroPedido}`,
         html: `
       <table border="0" cellpadding="0" style="border-radius:5px;padding:20px" cellspacing="0" width="600px" background-color="#2d3436" bgcolor="#2d3436">

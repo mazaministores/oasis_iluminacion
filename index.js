@@ -1,3 +1,4 @@
+
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 
@@ -134,7 +135,6 @@ app.post("/api/orders", (request, response) => {
         console.log(err)
       })
   })
-
     .catch(err => {
       console.log(err)
     })
@@ -146,6 +146,30 @@ app.get("/api/articles", (request, response) => {
     .then((articlesReturned) => {
       response.json(articlesReturned)
     })
+});
+
+app.get("/api/articles/category/:c", (request, response) => {
+
+  const category = request.params.c
+
+  Article.find({
+    categorie: { $eq: category }
+  })
+    .then((articlesReturned) => {
+      response.json(articlesReturned)
+    })
+
+});
+
+app.get("/api/articles/search/:s", (request, response) => {
+
+  const se = request.params.s
+
+  Article.find({ $text: { $search: se } })
+    .then((articlesReturned) => {
+      response.json(articlesReturned)
+    })
+
 });
 
 app.delete("/api/articles/:id", (request, response, next) => {
@@ -324,7 +348,6 @@ app.use((error, request, response, next) => {
   }
 
 })
-
 
 const PORT = process.env.PORT
 

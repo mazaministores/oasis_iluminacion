@@ -1,22 +1,23 @@
-const {Schema,model}=require('mongoose')
+const { Schema, model } = require('mongoose')
 
-const articleSchema=new Schema({
-    brand:String, 
-    model:String,
-    price:Number,
-    image:String,
-    categorie:String
+const articleSchema = new Schema({
+    brand: String,
+    model: String,
+    price: Number,
+    image: String,
+    categorie: String
 })
 
+articleSchema.index({ brand: 'text' });
 
-articleSchema.set('toJSON',{
-    transform:(document,returnedObject)=>{
-        returnedObject.id=returnedObject._id
+articleSchema.set('toJSON', {
+    transform: (document, returnedObject) => {
+        returnedObject.id = returnedObject._id
         delete returnedObject._id
         delete returnedObject._v
     }
 })
 
-const Article=model('Article',articleSchema)
+const Article = model('Article', articleSchema)
 
-module.exports=Article
+module.exports = Article

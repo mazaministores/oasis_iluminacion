@@ -152,12 +152,34 @@ app.get("/api/articles/category/:c", (request, response) => {
 
   const category = request.params.c
 
-  Article.find({
-    categorie: { $eq: category }
-  })
-    .then((articlesReturned) => {
-      response.json(articlesReturned)
+  if (category === 'CONTROL') {
+    console.log(category)
+    Article.find(
+      {
+        $or: [
+          { categorie: 'CAJAS METALICAS' },
+          { categorie: 'BREAKER' },
+          { categorie: 'MISCELANEAS' },
+          { categorie: 'PROTECTORES Y REGULADORES' },
+          { categorie: 'CONTACTORES' },
+          { categorie: 'HERRAMIENTAS' },
+          { categorie: 'TRANSFORMADORES Y BALASTOS' },
+        ]
+      }
+    )
+      .then((articlesReturned) => {
+        response.json(articlesReturned)
+      })
+  } else {
+    Article.find({
+      categorie: { $eq: category }
     })
+      .then((articlesReturned) => {
+        response.json(articlesReturned)
+      })
+  }
+
+
 
 });
 

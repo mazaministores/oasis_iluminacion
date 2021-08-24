@@ -30,23 +30,19 @@ let orders = []
 let methods = [
   {
     method: 'Pago Movil',
-    data: ''
+    data: '24.757.168 - 04129991157 -- BANCO DE VENEZUELA'
   },
   {
     method: "Transferencias Bancarias",
-    data: ""
-  },
-  {
-    method: "Punto de Venta",
-    data: ''
+    data: "BANCO DE VENEZUELA -- OASIS ILUMINACIÓN C.A -- 0102-0107-1900-0017-5168"
   },
   {
     method: 'Zelle',
-    data: ''
+    data: 'oasisiluminacion@gmail.com'
   },
   {
     method: "Efectivo",
-    data: 'Calle paez edificio Santa Ana pb  FRENTE A YO SI TOMO'
+    data: 'Calle paez Edificio Santa Ana pb - FRENTE A YO SI TOMO'
   }
 ]
 
